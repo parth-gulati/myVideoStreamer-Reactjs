@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300");
+
+.youtube {
+  transition: 0.5s;
+  color: red;
+  padding-bottom: 100px;
+  padding-top: 0;
+}
+
+.youtube {
+  color: darkred;
+  opacity: 0.2;
+}
+
+.div1 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: inline-block;
+  overflow: hidden;
+  color: #555;
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 32px;
+}
+
+.div11 {
+  animation: showup 7s infinite;
+}
+
+.div12 {
+  width: 0px;
+  animation: reveal 7s infinite;
+}
+
+.div12 span {
+  margin-left: -355px;
+  animation: slidein 7s infinite;
+}
+
+@keyframes showup {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes slidein {
+  0% {
+    margin-left: -800px;
+  }
+  20% {
+    margin-left: -800px;
+  }
+  35% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: 0px;
+  }
+}
+
+@keyframes reveal {
+  0% {
+    opacity: 0;
+    width: 0px;
+  }
+  20% {
+    opacity: 1;
+    width: 0px;
+  }
+  30% {
+    width: 355px;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    width: 355px;
+  }
+}
